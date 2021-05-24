@@ -1,0 +1,43 @@
+baseURL = "https://mfgee.ml/"
+ignoreFiles = [ "\\.files/README.md$",  ]
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "MFG End-To-End Hands on Workshop"
+theme = "hugo-theme-learn"
+uglyurls = false
+sectionPagesMenu = "main"
+relativeURLs = true
+
+[blackfriday]
+  hrefTargetBlank = true
+
+[params]
+  editURL = "https://github.com/liangyimingcom/MFGEEML-Workshop/edit/master/content/"
+  themeVariant = "mine"
+  showVisitedLinks = false
+  author = "Jack Tian<jacktian@amazon.com>"
+  description = " 手把手为制造业客户技术赋能"
+  disableSearch = false
+  disableAssetsBusting = false
+  disableShortcutsTitle = true
+  branch = "master"
+  pygmentsUseClasses = true
+  pygmentsCodeFences = true
+  pygmentsCodefencesGuessSyntax = true
+  pygmentsStyle = "tango"
+  codeRepoName = "liangyimingcom/MFGEEML-Workshop"
+
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-github'></i> GitHub Project"
+url = "https://github.com/liangyimingcom/MFGEEML-Workshop"
+weight = 30
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-envelope'></i> Have questions?"
+url = "https://github.com/liangyimingcom/MFGEEML-Workshop/issues"
+weight = 40
+
+[outputs]
+home = [ "HTML", "JSON"]
+page = [ "HTML" ]

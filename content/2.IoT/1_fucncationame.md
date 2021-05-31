@@ -1,39 +1,39 @@
 ---
-title: "程序模拟设备数据"
+title: "配置AWS IoT 环境"
 chapter: false
 weight: 21
 ---
 
-1.	设备数据上云（IoT）：程序模拟设备数据 → IoT GG → IoT Core → Rule Engine → S3。通过Node Red做大屏展示
+
+进入AWS IoT 控制台
+
+在左侧Greengrass中找到(经典版V1),在组中找到前面创建的Greengrass组
+![](/images/IoT/GGroup.png)
+点击组名称进入配置界面
+
+在部署选项中,找到右上方点击**部署**选项,点击部署
+![](/images/IoT/deployGG.png)
+在配置设备搜索您的核心的方式点击**自动检测**
+
+等待完成,左上方会由正在进行转变为已成功完成.
+成功完成表示Greenngrass组部署成功
 
 
+接下来点击**资源**选项
+![](/images/IoT/Resources.png)
+点击添加本地资源--**选择本地资源**
+在附加本地资源中选择**LocalVolumeResourceData**
+![](/images/IoT/lambda10.png)
+点击完成后保存,再次点击部署,等待部署完成.
 
-<u>以下为Sample：</u>
+![](/images/IoT/deploygg2.png)
 
-在本实验中，我们会通过运行CloudFormation脚本，部署本地数据中心的应用系统。具体步骤如下：
+在控制台左侧菜单中点击**测试**选项.
+![](/images/IoT/test1.png)
+在订阅主题中的主题筛选条件中输入,*sensor/out*
 
-1.下载CloudFormation脚本到本地电脑。
+![](/images/IoT/test2.png)
 
-
-2.打开北京region的CloudFormation console：https://console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/create/template
-
-在模板源里选择"上传模板文件"
-
-在【选择文件】按钮里，选择在之前下载的模板文件：workshop_local.yaml。
-![](/images/CreateSourceEnv/createStack1.png)
-
-3.在堆栈详细信息部分：
-
-* 堆栈名称输入：local-idc-env
-
-* InstanceType输入：c5.large
-
-* KeyName选择之前创建的key：local-idc-key
-
-其他保留缺省值，选择【下一步】按钮。
-![](/images/CreateSourceEnv/createStack2.png)
-
-4.在"配置堆栈选项"页面上，保留缺省值，选择【下一步】
-
-5.在第四步"审核"中，选择【创建堆栈】按钮，开始部署CloudFormation stack，等待该过程结束，部署过程大约需要5分钟左右。
+稍等片刻,订阅窗口就会有消息产生
+![](/images/IoT/test3.png)
 

@@ -1,71 +1,48 @@
 ---
-title: "通过Node Red做大屏展示"
+title: "配置AWS IoT 数据转存储"
 chapter: false
 weight: 22
 ---
+由于后面试验需要,我们需要将设备上传的数据存储到S3进行数据分析,在存储过程中我们可以对其进行修正和格式化.
 
-1. 设备数据上云（IoT）：程序模拟设备数据 → IoT GG → IoT Core → Rule Engine → S3。通过Node Red做大屏展示
+这里我们使用AWS IoT core规则引擎和Kinesis Firehose作为IoT数据转存储的服务.
 
-   
+转到AWS IoT 服务界面,找到[规则](https://console.amazonaws.cn/iot/home?region=cn-north-1#/rulehub)
+![](/images/IoT/iotrule1.png)
+点击创建,在右上角找到**创建**,创建一条新规则
 
-<u>以下为Sample：</u>
+在创建的界面名称中,输入规则名称,例如IoT2Analytics
 
-在本实验中，我们会通过登录堡垒机，对本地数据中心的应用系统进行初始化。具体步骤如下：
+在**规则查询语句**中,SQL语句输入*SELECT * FROM 'sensor/out'*,在实际环境中可以根据情况对字段进行调整, [参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)
 
-1.在EC2的控制台上找到该Cloudformation创建的EC2实例，包括一台堡垒机，和一台Wordpress服务器（其中，Wordpress服务器里同时部署了数据库和应用系统）：
-https://console.amazonaws.cn/ec2/v2/home?region=cn-north-1#Instances:tag:Name=Basion,APP;sort=launchTime
+在**设置一个或多个操作**中找到**添加操作**
 
-选中Wordpress服务器，并记录下该服务器的私有IP地址。
-![](/images/CreateSourceEnv/getIDCWPIP.png)
+选择将消息发送到 Amazon Kinesis firehose流
+![](/images/IoT/rule1.png)
 
-2.选中堡垒机，并记录下该服务器的公网IP地址：
-![](/images/CreateSourceEnv/getBastionIP.png)
+点击**配置操作**
 
-在【操作】下拉菜单中，选择"获取Windows密码"菜单，如果遇到下面窗口，则等待5分钟以后再试。
-![](/images/CreateSourceEnv/waitFourMins.png)
+在配置操作界面,选择创建新资源.
 
-点击【Browse...】按钮，把之前下载的密钥pem文件打开，再点击【解密密码】，从而获取登录Windows的密码。
-![](/images/CreateSourceEnv/getBastionPassword1.png)
-![](/images/CreateSourceEnv/getBastionPassword2.png)
+- 在Amazon Kinesis界面中点击创建传输流,在传输流名称中输入传输流名称例如**IoT2S3**,其他保持默认
+- 点击**下一步**
+- 在使用 AWS Lambda 转换源记录和转换记录格式我们保持默认(这一步可以对数据进行内容和格式的转换操作)
+- 点击**下一步**
+- 在目标中,我们选择Amazon S3作为目标
+- 在S3存储桶中 我们选择前期Cloudformation创建的存储桶,以pdmiotworkshop-pdmdatas3bucket-*开头,其他保持默认
+- 点击**下一步**
+- 在配置设置页面中可以选择缓冲条件,间隔,压缩和加密方式等,我们这里将缓冲区大小修改为**50M**,在下方权限选项中,创建或更新IAM角色,其他保持默认
+- 点击**下一步**
+- 点击**创建传送流**
 
-点击复制图标，把该密码拷贝下来
-![](/images/CreateSourceEnv/getBastionPassword3.png)
+回到IoT规则页面的配置操作中,找到上一步创建的Amazon Kinesis Firehose 流
+- 在流名称中选择之前创建的IoT2S3流
+- 在分隔符中,我们选择 **,(逗号)** 分隔符
+- 在下方角色选项中点击创建角色,输入角色名称如IoT2S3_Role后点击**创建**
+- 点击**添加操作**
 
-打开本地Windows的remote desktop，输入堡垒机的公网ip地址，用户名输入administrator，回车进行登录。
-![](/images/CreateSourceEnv/remotedesktop.png)
-在提示密码的弹出窗口中，输入上一步记录的密码，回车进行确认。如果有弹出安全证书的告警信息，则点击【Yes】按钮即可。
-
-3.登录到堡垒机以后，会多次看到下面的提示，点击【OK】按钮，忽略即可。
-![](/images/CreateSourceEnv/ignoreMySQLError1.png)
-
-打开桌面的WorkshopTools文件夹，找到并双击"MySQL Workbench 8.0 CE"。
-在MySQL Workbench的界面上找到并右键点击"local-idc-env"图标，在弹出菜单中选择"Edit Connection..."菜单选项。
-![](/images/CreateSourceEnv/editDBConnection1.png)
-
-在Hostname字段里输入第一步中记录的Wordpress服务器的私有IP地址
-
-点击"Store in Vault..."按钮，在弹出的窗口的"Password"栏位中输入：Initial-1
-
-如果发现弹出如下报错窗口，则点击【Ignore】按钮忽略即可。
-![](/images/CreateSourceEnv/ignoreMySQLError2.png)
-
-点击【Test Connection】按钮确认连接成功以后，点击【Close】按钮退出。
-![](/images/CreateSourceEnv/editDBConnection2.png)
-
-双击"local-idc-env"，然后在Query 1里输入下面的SQL，注意把下面的"Wordpress服务器的私有IP地址"改为你在第1步中记录的私有IP地址。
-```bash
-UPDATE wp_options SET option_value = REPLACE(option_value, 'localhost', 'Wordpress服务器的私有IP地址') WHERE option_name = 'home' OR option_name = 'siteurl';
-UPDATE wp_posts SET post_content = REPLACE(post_content, 'localhost', 'Wordpress服务器的私有IP地址');
-UPDATE wp_posts SET guid = REPLACE(guid, 'localhost', 'Wordpress服务器的私有IP地址');
-```
-
-然后在Query下拉菜单里选择"Execute (All or Selection)"选项，执行这3条SQL语句：
-![](/images/CreateSourceEnv/updateMetadata1.png)
-
-执行后的结果如下：
-![](/images/CreateSourceEnv/updateMetadata2.png)
-
-4.在桌面的WorkshopTools文件夹，找到并双击"Google Chrome"，在浏览器地址栏中输入：Wordpress服务器的私有IP地址/wordpress，从而打开Wordpress应用。
+至此,IoT数据到S3的规则创建完成.稍后我们就可以在指定的S3存储桶中看到IoT的数据
+![](/images/IoT/s3data.png)
 
 
 

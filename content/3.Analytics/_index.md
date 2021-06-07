@@ -4,7 +4,7 @@ chapter: false
 weight: 30
 ---
 
-## 数据清洗准备（Analytics）
+## 构建智能湖仓进行数据清洗（Lake House）
 
 数据清洗准备（Analytics）：数据处理ETL，数据分析
 

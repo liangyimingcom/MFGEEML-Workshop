@@ -4,32 +4,21 @@ chapter: false
 weight: 30
 ---
 
-## 构建智能湖仓进行数据清洗（Lake House）
+## 智能湖仓（Lake House）
 
-数据清洗准备（Analytics）：数据处理ETL，数据分析
+AWS为客户提供了基于S3的智能湖仓解决方案，包括：数据收集，存储，预览，数据处理和数据展现的各个环节。在本次实验中，我们利用xxx数据集，搭建一个设备故障数据分析平台，为后续第三部分的预测性维护做数据准备。这个分析平台提供针对采集到的设备数据进行存储，预览，清洗，ETL和分析等功能。在整个过程中，您将使用并了解AWS的DataBrew，Glue， Athena，等无服务器服务。
 
+# 应用程序架构 
 
+完成本实验后，您搭建的数据湖将如下： 
 
-<u>以下为Sample：</u>
+![img](file:////Users/jacktian/Library/Group%20Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png)
 
-本次实验会在AWS宁夏region部署容灾环境的基础架构，部署过程中，会在AWS Landing Zone的理念下，以符合AWS最佳实践的方式部署基础架构。本次实验包括两部分：
+架构图所示：采集到的传感器数据存放在S3中央存储中；实时数据也不断通过Kinesis套件注入到S3；我们将会：
 
-* 通过Cloudformation脚本部署相关资源。
+\1.   使用AWS Glue DataBrew对原始数据进行预览和完整性检查
 
-* 把本地数据中心的网络和容灾环境的网络打通。
+\2.   使用AWS Glue对数据进行元数据管理和数据ETL
 
-先进行如下的准备工作：
-
-1.创建DMS IAM role。进入创建IAM role的控制台：https://console.amazonaws.cn/iam/home?region=cn-northwest-1#/roles$new?step=type
-
-选择"AWS产品"，在"或者选择一个服务以查看其使用案例"部分选择DMS。点击【下一步:权限】按钮。
-![](/images/LandingZoneOfDRSite/createDMSRole1.png)
-
-在"Attach权限策略"页面上，选择名为"AmazonDMSVPCManagementRole"的策略。点击【下一步:标签】按钮。
-![](/images/LandingZoneOfDRSite/createDMSRole2.png)
-
-在"添加标签 (可选)"页面上，保留缺省值，点击【下一步:审核】按钮。
-
-在"创建角色"页面上，"角色名称"输入：dms-vpc-role，点击【创建角色】按钮。
-![](/images/LandingZoneOfDRSite/createDMSRole3.png)
+\3.   使用Athena对数据进行ad hoc查询，验证数据准确性
 

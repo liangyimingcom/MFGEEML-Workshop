@@ -1,7 +1,7 @@
 ---
 title: "数据分析"
 chapter: false
-weight: 32
+weight: 42
 ---
 
 ## 数据分析

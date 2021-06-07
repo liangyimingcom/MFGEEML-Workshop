@@ -1,5 +1,5 @@
 ---
-title: "数据清洗准备（Analytics）"
+title: "构建智能湖仓进行数据清洗（Lake House）"
 chapter: false
 weight: 30
 ---

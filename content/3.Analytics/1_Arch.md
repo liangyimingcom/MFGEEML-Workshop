@@ -4,8 +4,6 @@ chapter: false
 weight: 31
 ---
 
-# 应用程序架构
-
 完成本实验后，您搭建的数据湖将如下： 
 
 ![img](file:////Users/jacktian/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png?lastModify=1623047408)

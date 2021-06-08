@@ -1,7 +1,7 @@
 ---
 title: "使用Data Brew进行数据预览和完整性检查(10min)"
 chapter: false
-weight: 34
+weight: 33
 ---
 
 8， 在 AWS 管理控制台的 服务搜索框中，输入：databrew，点击‘AWS Glue DataBrew’

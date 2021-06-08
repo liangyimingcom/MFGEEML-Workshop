@@ -1,7 +1,7 @@
 ---
 title: "准备环境"
 chapter: false
-weight: 33
+weight: 32
 ---
 
 1， 在 AWS 管理控制台的 服务搜索框中，输入：S3，点击 ’S3’

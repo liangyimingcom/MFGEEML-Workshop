@@ -1,7 +1,7 @@
 ---
 title: "使用Glue对元数据进行管理(10min)"
 chapter: false
-weight: 35
+weight: 34
 ---
 
 在这个任务中，我们将使用AWS Glue的爬虫功能爬取S3中的数据的元数据，并在Glue的元数据仓库中建立表定义。

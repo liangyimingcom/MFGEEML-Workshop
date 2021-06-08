@@ -31,7 +31,7 @@ weight: 33
 
 做如下修改：
 
-| 输入来自S3的源 | s3://<*yourname>*-e2e-workshop/data_source/ |
+| 输入来自S3的源 | s3://<*yourname*>-e2e-workshop/data_source/ |
 | -------------- | ------------------------------------------- |
 
 12， 在下方列出的文件中，选择之前复制的数据源：e2e_workshop.csv

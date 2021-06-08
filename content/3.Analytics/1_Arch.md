@@ -8,11 +8,11 @@ weight: 31
 
 ![img](file:////Users/jacktian/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png?lastModify=1623047408)
 
-架构图所示：采集到的传感器数据存放在S3中央存储中；实时数据也不断通过Kinesis套件注入到S3；我们将会：
+架构图所示：采集到的传感器数据存放在 S3 中央存储中；实时数据也不断通过 Kinesis 套件注入到 S3；我们将会：
 
-1. 使用AWS Glue DataBrew对原始数据进行预览和完整性检查
+1. 使用 AWS Glue DataBrew 对原始数据进行预览和完整性检查
 
-2. 使用AWS Glue对数据进行元数据管理和数据ETL
+2. 使用 AWS Glue 对数据进行元数据管理和数据 ETL
 
-3. 使用Athena对数据进行ad hoc查询，验证数据准确性
+3. 使用 Athena 对数据进行 ad hoc 查询，验证数据准确性
 

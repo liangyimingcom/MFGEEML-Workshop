@@ -6,7 +6,7 @@ weight: 31
 
 完成本实验后，您搭建的数据湖将如下： 
 
-![img](file:////Users/jacktian/Library/Group Containers/UBF8T346G9.Office/TemporaryItems/msohtmlclip/clip_image001.png?lastModify=1623047408)
+![](/images/LakeHouse/arch.png)
 
 架构图所示：采集到的传感器数据存放在 S3 中央存储中；实时数据也不断通过 Kinesis 套件注入到 S3；我们将会：
 

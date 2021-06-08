@@ -10,6 +10,8 @@ weight: 33
 
 ![](/images/LakeHouse/3_1_0_brew_create_project.png)
 
+做如下修改：
+
 | 项目名称 | e2e-workshop-databrew |
 | -------- | --------------------- |
 | 配方名称 | 保持默认              |
@@ -18,6 +20,8 @@ weight: 33
 
 ![](/images/LakeHouse/3_1_1_brew_dataset.png)
 
+做如下修改：
+
 | 数据集名称 | e2e-workshop-dataset |
 | ---------- | -------------------- |
 
@@ -25,16 +29,18 @@ weight: 33
 
 ![](/images/LakeHouse/3_1_2_brew_dataset_source.png)
 
+做如下修改：
+
 | 输入来自S3的源 | s3://*yourname*-e2e-workshop/data_source/ |
 | -------------- | ----------------------------------------- |
-
- 
 
 12， 在下方列出的文件中，选择之前复制的数据源：e2e_workshop.csv
 
 13， 其它配置：
 
 ![](/images/LakeHouse/3_1_2_brew_dataset_csv.png)
+
+做如下修改：
 
 | 所选文件的格式 | csv  |
 | -------------- | ---- |
@@ -44,6 +50,8 @@ weight: 33
 15， 权限：因为AWS将要访问您的数据，所以在这里，您需要通过一个IAM角色授权AWS允许访问您的数据
 
 ![](/images/LakeHouse/3_1_4_brew_iam.png)
+
+做如下修改：
 
 | 角色名称      | 创建新的IAM角色 |
 | ------------- | --------------- |
@@ -60,6 +68,8 @@ weight: 33
 18，    点击 ’刨析’，’运行数据刨析’
 
 ![](/images/LakeHouse/3_1_6_brew_analytics.png)
+
+做如下修改：
 
 | 作业运行样本/数据样本/自定义样本 | 修改为2000（加速实验过程）                |
 | -------------------------------- | ----------------------------------------- |

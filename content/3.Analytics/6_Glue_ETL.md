@@ -47,6 +47,7 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 49，    点击 ‘编辑策略’，’JSON’，使用如下json串覆盖原有的内容
 
+```json
 {
 
   "Version": "2012-10-17",
@@ -76,6 +77,7 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
   ]
 
 }
+```
 
 点击 ‘查看策略’，’保存修改’
 

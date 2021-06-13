@@ -1,5 +1,5 @@
 ---
-title: "使用Data Brew进行数据预览和完整性检查(10 min)"
+title: "使用 Data Brew 进行数据预览和完整性检查(10 min)"
 chapter: false
 weight: 33
 ---

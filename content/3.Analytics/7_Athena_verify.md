@@ -1,5 +1,5 @@
 ---
-title: "使用Athena对处理后数据进行查询验证(5 min)"
+title: "使用 Athena 对处理后数据进行查询验证(5 min)"
 chapter: false
 weight: 70
 ---

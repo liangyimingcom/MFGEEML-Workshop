@@ -1,5 +1,5 @@
 ---
-title: "使用Glue对元数据进行管理(10 min)"
+title: "使用 Glue 对元数据进行管理(10 min)"
 chapter: false
 weight: 40
 ---

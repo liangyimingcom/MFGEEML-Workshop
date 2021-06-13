@@ -1,5 +1,5 @@
 ---
-title: "使用Glue对数据进行变形以便优化查询(30 min)"
+title: "使用 Glue 对数据进行变形以便优化查询(30 min)"
 chapter: false
 weight: 60
 ---

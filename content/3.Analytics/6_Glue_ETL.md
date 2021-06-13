@@ -1,10 +1,10 @@
 ---
-title: "使用Glue对数据进行变形以便优化查询(30min)"
+title: "使用Glue对数据进行变形以便优化查询(30 min)"
 chapter: false
-weight: 36
+weight: 60
 ---
 
-在这个任务中，我们将使用AWS Glue的任务功能，将S3中的CSV格式数据转换为Parquet格式，从而优化sql查询效率。
+在这个任务中，我们将使用 AWS Glue 的任务功能，将 S3 中的 csv 格式数据转换为 Parquet 格式，从而优化 sql 查询效率。
 
 38， 在 AWS 管理控制台的 服务搜索框中，输入：glue，点击 ‘AWS Glue’
 
@@ -31,7 +31,7 @@ weight: 36
 
 43， Output Schema Definition，点击 ‘保存作业并编辑脚本’
 
-44， 检查Glue自动生成的代码，在倒数第二行的connection_options中增加参数"partitionKeys": ["code"]，并与前一参数”Path”用逗号与空格隔开。
+44， 【选做】检查Glue自动生成的代码，在倒数第二行的connection_options中增加参数"partitionKeys": ["code"]，并与前一参数”Path”用逗号与空格隔开。
 
 datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3, connection_type = "s3", connection_options = {"path": "s3://<*yourname*>-e2e-workshop/data_output", "partitionKeys": ["code"]}, format = "parquet", transformation_ctx = "datasink4")
 
@@ -69,7 +69,7 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 点击 ‘查看策略’，’保存修改’
 
-50，    当e2e-parquet-job运行完毕后，在左侧菜单中选择 ‘爬网程序’，点击蓝色 ‘添加爬网程序’ 按钮。
+50，    当 e2e-parquet-job 运行完毕后，在左侧菜单中选择 ‘爬网程序’，点击蓝色 ‘添加爬网程序’ 按钮。
 
 51，    输入爬网程序的名字：e2e-workshop-parquet-crawler，点击 ‘下一步’
 

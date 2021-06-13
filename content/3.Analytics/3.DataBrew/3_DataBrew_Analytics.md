@@ -1,7 +1,7 @@
 ---
 title: "Data Brew - Analytics"
 chapter: false
-weight: 36
+weight: 30
 ---
 
 18，    点击 ’刨析’，’运行数据刨析’

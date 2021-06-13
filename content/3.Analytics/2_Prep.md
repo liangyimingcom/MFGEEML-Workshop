@@ -1,7 +1,7 @@
 ---
 title: "准备环境"
 chapter: false
-weight: 32
+weight: 20
 ---
 
 在本环节中，需要在 S3 上创建3个临时文件夹：data_brew_out, data_output, athena_output

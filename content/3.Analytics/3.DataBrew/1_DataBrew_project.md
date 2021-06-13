@@ -1,7 +1,7 @@
 ---
 title: "Data Brew - 创建项目"
 chapter: false
-weight: 34
+weight: 10
 ---
 
 8， 在 AWS 管理控制台的 服务搜索框中，输入：databrew，点击‘AWS Glue DataBrew’

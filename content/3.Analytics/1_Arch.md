@@ -1,7 +1,7 @@
 ---
 title: "应用程序架构"
 chapter: false
-weight: 31
+weight: 10
 ---
 
 完成本实验后，您搭建的数据湖将如以下架构图所示：

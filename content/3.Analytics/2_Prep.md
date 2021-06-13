@@ -4,6 +4,10 @@ chapter: false
 weight: 32
 ---
 
+在本环节中，需要在 S3 上创建3个临时文件夹：data_brew_out, data_output, athena_output
+
+
+
 1， 在 AWS 管理控制台的 服务搜索框中，输入：S3，点击 ’S3’
 
 2， 进入S3控制台，点击 ’创建存储桶’

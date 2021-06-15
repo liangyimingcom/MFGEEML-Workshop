@@ -10,7 +10,7 @@ AWS IoT 提供云服务将 IoT 设备连接到其他设备和 AWS 云服务。AW
 
 1. 使用AWS IoT Greengrass 模拟设备并发送数据至AWS IoT Core
 2. AWS IoT Core 接收消息并通过规则引擎分发至Amazon Kinesis Firehose和AWS IoT Analytics
-3. Amazon Kinesis Firehose将消息以流式数据处理并转换为CSV公司存储至S3中
+3. Amazon Kinesis Firehose将消息以流式数据处理并转换为CSV格式存储至S3中
 4. AWS IoT Analytics对数据内容进行处理并结合Cloudwatch做实时展现
 
 

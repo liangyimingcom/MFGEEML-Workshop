@@ -4,9 +4,9 @@ chapter: false
 weight: 10
 ---
 
-8， 在 AWS 管理控制台的 服务搜索框中，输入：databrew，点击‘AWS Glue DataBrew’
+8， 在 AWS 管理控制台的 服务搜索框中，输入：databrew，点击 ‘**AWS Glue DataBrew**’
 
-9， 进入DataBrew 控制台，点击’创建项目’
+9， 进入DataBrew 控制台，点击’**创建项目**’
 
 ![](/images/LakeHouse/3_1_0_brew_create_project.png)
 
@@ -16,7 +16,7 @@ weight: 10
 | -------- | --------------------- |
 | 配方名称 | 保持默认              |
 
-10， 选择一个数据集，点击 ‘新数据集’
+10， 选择一个数据集，点击 ‘**新数据集**’
 
 ![](/images/LakeHouse/3_1_1_brew_dataset.png)
 
@@ -57,4 +57,4 @@ weight: 10
 | ------------- | --------------- |
 | 新IAM角色后缀 | e2e-workshop    |
 
-点击‘创建项目’
+点击‘**创建项目**’

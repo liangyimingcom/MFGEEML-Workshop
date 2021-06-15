@@ -16,7 +16,7 @@ weight: 22
 创建选项中可以自定义堆栈名称,或者保持默认,勾选下方**我确认，AWS CloudFormation 可能创建 IAM 资源**,点击创建即可.
 
 稍等片刻,待堆栈创建完毕.
-  
+
 
 接下来我们使用AWS IoT core规则引擎和Kinesis Firehose作为IoT数据转存储的服务.
 
@@ -31,7 +31,7 @@ weight: 22
 | ----- | :-: | ---: |
 | 名称    | e2eIoTRule  | 可自定义  |
 | 描述    | IoT to kinesis and IoT analytic |  可选 |
-| 规则查询语句    | SELECT * FROM 'sensor/out'  |[参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)|
+| 规则查询语句    | SELECT * FROM 'sensor/out' |[参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)|
 
 在下方**设置一个或多个操作**处,点击添加操作
 

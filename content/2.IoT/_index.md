@@ -24,12 +24,18 @@ AWS IoT 提供云服务将 IoT 设备连接到其他设备和 AWS 云服务。AW
 #### 1.1 登录控制台
 首先登录区 [AWS东京区域](https://ap-northeast-1.console.aws.amazon.com/console/home?region=ap-northeast-1)在登录界面输入，账户，用户名，密码登录
 
+在[EC2控制台](https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#KeyPairs:)创建秘钥对界面中点击创建秘钥对
 
-进入Cloudformation服务,导入Cloudformation模板或
+在创建界面中输入名称和相应的文件格式,点击**创建秘钥对**
+
+![](/images/IoT/createkeypair.png)
+
+
+接下来进入Cloudformation服务,导入Cloudformation模板或
 [直接点击此链接直接创建](https://ap-northeast-1.console.aws.amazon.com/cloudformation/home?region=ap-northeast-1#/stacks/quickcreate?templateURL=https://pdm-workshop-jp.s3-ap-northeast-1.amazonaws.com/cfn/e2eworkshop1.yml&stackName=e2eWorkshop)
 
 
-在参数部分,可以保留默认,也可以自定义Core设备名称,keypair处选择前期创建的EC2Key Pair,如果没有在EC2界面中创建.
+在参数部分,可以保留默认,也可以自定义Core设备名称,keypair处选择前期创建的EC2Key Pair
 ![](/images/IoT/createstack1.png)
 
 在最下方选中**我确认，AWS CloudFormation 可能创建 IAM 资源**,然后点击创建堆栈即可

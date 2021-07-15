@@ -4,9 +4,17 @@ chapter: false
 weight: 50
 ---
 
-36， 切换至 Athena 窗口
+36， 切换至 Athena 窗口。第一次使用 Athena，需要设置查询结果存放的 S3 位置。
 
-将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击 ’运行查询’。
+在控制台右上角点击 '**设置**'，在弹出的窗口中，输入之前创建的 S3 桶的位置：
+
+![](/images/LakeHouse/3_2_0_athena_set.png)
+
+| 项目           | 配置项                                                     | 备注 |
+| -------------- | ---------------------------------------------------------- | ---- |
+| 查询结果的位置 | s3://aws-athena-query-results-<*yourname*>-ap-northeast-1/ |      |
+
+将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击 ’**运行查询**’。
 
 ~~~
 SELECT COUNT(1) as TotalCount FROM "e2e-workshop"."data_source";
@@ -14,7 +22,7 @@ SELECT COUNT(1) as TotalCount FROM "e2e-workshop"."data_source";
 
 结果窗口中将显示表 ‘data_source’ 中的数据总条数。
 
-37， 将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击’运行查询’。
+37， 将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击’**运行查询**’。
 
 ~~~
 SELECT COUNT (1) as TotalCount FROM "e2e-workshop"."data_source" where code='500304';

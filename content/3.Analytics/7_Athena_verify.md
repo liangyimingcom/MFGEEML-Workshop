@@ -5,13 +5,15 @@ weight: 70
 ---
 
 61， 切换至 Athena 窗口
-将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击 ’运行查询’。
+将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击 ’**运行查询**’。
+
 ~~~
 SELECT COUNT(1) as TotalCount FROM "e2e-workshop"."data_output";
 ~~~
 结果窗口中将显示表 ‘data_output’ 中的数据总条数。
 
-62， 将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击’运行查询’。
+62， 将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击 ’**运行查询**’。
+
 ~~~
 SELECT COUNT (1) as TotalCount FROM "e2e-workshop"."data_output" where code='500304';
 ~~~

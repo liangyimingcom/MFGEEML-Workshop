@@ -5,6 +5,10 @@ weight: 22
 ---
 在此部分中,我们需要会设备上传的数据存储到S3中,并在存储过程中对其进行修正和格式化.
 
+我们使用Cloudformation创建一些初始的资源,包括
+1. 用于Amazon Kinesis源记录转换用的Lambda函数(以e2eWorkshop-IoT2S3LambdaXX开头)
+2. 用户AWS IoT analytics 数据处理用的Lambda函数(以e2eWorkshop-IoT2CWLambdaXX开头)
+
 
 接下来我们使用AWS IoT core规则引擎和Kinesis Firehose作为IoT数据转存储的服务.
 
@@ -18,8 +22,8 @@ weight: 22
 | 项目 | 配置项 | 备注 |
 | ----- | :-: | ---: |
 | 名称    | e2eIoTRule  | 可自定义  |
-| 描述    | IoT to kinesis firehose |  可选 |
-| 规则查询语句    | SELECT * FROM 'sensor/out'  |[参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)|
+| 描述    | IoT to kinesis and IoT analytic |  可选 |
+| 规则查询语句    | SELECT * FROM 'sensor/out' |[参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)|
 
 在下方**设置一个或多个操作**处,点击添加操作
 

@@ -3,14 +3,9 @@ title: "配置AWS IoT 数据转存储"
 chapter: false
 weight: 22
 ---
-在此部分中,我们需要会设备上传的数据存储到S3中,并在存储过程中对其进行修正和格式化.
+在此部分中,我们需要将设备上传的数据转存储到S3中,并在存储过程中对其进行修正和格式化.
 
-我们使用Cloudformation创建一些初始的资源,包括
-1. 用于Amazon Kinesis源记录转换用的Lambda函数(以e2eWorkshop-IoT2S3LambdaXX开头)
-2. 用户AWS IoT analytics 数据处理用的Lambda函数(以e2eWorkshop-IoT2CWLambdaXX开头)
-
-
-接下来我们使用AWS IoT core规则引擎和Kinesis Firehose作为IoT数据转存储的服务.
+我们使用AWS IoT core规则引擎和Kinesis Firehose作为IoT数据转存储的服务.
 
 转到AWS IoT 服务界面,找到[规则](https://us-east-1.console.aws.amazon.com/iot/home?region=us-east-1#/rulehub)
 

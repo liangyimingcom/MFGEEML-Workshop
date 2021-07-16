@@ -1,5 +1,5 @@
 ---
-title: "配置AWS IoT 设备环境"
+title: "配置AWS IoT 设备环境(10 min)"
 chapter: false
 weight: 21
 ---

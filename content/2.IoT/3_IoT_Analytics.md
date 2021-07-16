@@ -1,5 +1,5 @@
 ---
-title: "配置AWS IoT Analytics 进行数据展示"
+title: "配置AWS IoT Analytics 进行数据展示(20min)"
 chapter: false
 weight: 23
 ---

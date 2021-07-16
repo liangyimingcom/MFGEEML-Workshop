@@ -1,5 +1,5 @@
 ---
-title: "配置AWS IoT 数据转存储"
+title: "配置AWS IoT 数据转存储 (20 min)"
 chapter: false
 weight: 22
 ---

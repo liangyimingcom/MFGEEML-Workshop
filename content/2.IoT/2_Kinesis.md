@@ -36,7 +36,7 @@ weight: 22
 - 在使用 AWS Lambda 转换源记录--源记录转换,选择**已启用**,并选择以e2eWorkshop-IoTanalytics-IoT2S3LambdaXX开始的Lambda函数,其余保持默认
 - 点击**下一步**
 - 在目标中,我们选择Amazon S3作为目标
-- 在S3存储桶中 我们选择前期Cloudformation创建的存储桶,以e2eworkshop-e2edatas3bucket-XX开头,其他保持默认
+- 在S3存储桶中 我们选择前期Cloudformation创建的存储桶,以e2eworkshop-e2edatas3bucket-XX开头的存储桶,其他保持默认
 - 点击**下一步**
 - 在配置设置页面中可以选择缓冲条件,间隔,压缩和加密方式等,我们这里将缓冲区大小修改为**50M**,在下方权限选项中,创建或更新IAM角色,其他保持默认
 - 点击**下一步**

@@ -40,7 +40,7 @@ weight: 21
 ![](/images/IoT/e2egggroup2.png)
 
 接下来在IoT 控制台中找到**测试**-- **MQTT 测试客户端**
-在**主题筛选条件** 中填入 # 既可以看到设备有消息发送
+在**主题筛选条件** 中填入 # 即可以看到设备有消息发送
 
 ![](/images/IoT/e2egggroup3.png)
 

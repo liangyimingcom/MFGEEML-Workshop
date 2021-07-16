@@ -1,5 +1,5 @@
 ---
-title: "构建IoT设备和数据环境"
+title: "构建IoT设备和数据环境 (10 Min)"
 chapter: false
 weight: 20
 ---

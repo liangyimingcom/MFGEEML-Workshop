@@ -6,7 +6,7 @@ weight: 20
 AWS IoT 提供云服务将 IoT 设备连接到其他设备和 AWS 云服务。AWS IoT 提供设备软件以帮助您将 IoT 设备集成到基于 AWS IoT 的解决方案。在这个部分中,我们将构建一个模拟环境用来模拟设备并发出模拟的传感器数据,传感器数据进入AWS IoT Core后我们使用Kinesis和AWS IoT Analytics进行数据的处理.
 
 完成本实验后，您搭建的IoT设备和数据环境将如下架构图所示：
-![](/images/IoT/arc.png)
+![](/images/IoT/Arc.png)
 
 1. 使用AWS IoT Greengrass 模拟设备并发送数据至AWS IoT Core
 2. AWS IoT Core 接收消息并通过规则引擎分发至Amazon Kinesis Firehose和AWS IoT Analytics

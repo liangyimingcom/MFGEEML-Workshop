@@ -33,7 +33,7 @@ weight: 22
 
 - 在Amazon Kinesis界面中点击创建传输流,在传输流名称中输入传输流名称例如**IoT2S3**其他保持默认
 - 点击**下一步**
-- 在使用 AWS Lambda 转换源记录--源记录转换,选择**已启用**,并选择以e2eWorkshop-IoTanalytics-IoT2S3LambdaXX开始的Lambda函数,其余保持默认
+- 在使用 AWS Lambda 转换源记录--源记录转换,选择**已启用**,并选择以e2eWorkshop-IoT2S3LambdaXX开始的Lambda函数,其余保持默认
 - 点击**下一步**
 - 在目标中,我们选择Amazon S3作为目标
 - 在S3存储桶中 我们选择前期Cloudformation创建的存储桶,以e2eworkshop-e2edatas3bucket-XX开头的存储桶,其他保持默认

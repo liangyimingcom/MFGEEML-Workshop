@@ -23,11 +23,11 @@ weight: 60
 
 42， 选择一个数据目标，选择 ‘在数据目标中创建表’，做如下修改，点击 ‘**下一步**’
 
-| 项目     | 配置项                                     | 备注 |
-| -------- | ------------------------------------------ | ---- |
-| 数据存储 | Amazon S3                                  |      |
-| 格式     | Parquet                                    |      |
-| 目标路径 | s3://<*yourname*>-e2e-workshop/data_output |      |
+| 项目     | 配置项                                              | 备注 |
+| -------- | --------------------------------------------------- | ---- |
+| 数据存储 | Amazon S3                                           |      |
+| 格式     | Parquet                                             |      |
+| 目标路径 | s3://e2eworkshop-e2edatas3bucket-<*XX*>/data_output |      |
 
 43， Output Schema Definition，点击 ‘**保存作业并编辑脚本**’
 
@@ -37,7 +37,7 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 45， 点击 ‘**保存**’，’**运行作业**’。（该过程需要几分钟时间）观察是否失败了？
 
-失败了：思考是什么原因？（之前创建的IAM角色：AWSGlueServiceRole-e2e-workshop-crawler缺少对S3目录s3://<*yourname*>-e2e-workshop/data_output的访问权限，导致失败。所以现在为其增加相应权限）
+失败了：思考是什么原因？（之前创建的IAM角色：AWSGlueServiceRole-e2e-workshop-crawler缺少对S3目录s3://e2eworkshop-e2edatas3bucket-<*XX*>/data_output的访问权限，导致失败。所以现在为其增加相应权限）
 
 46， 在 AWS 管理控制台的 服务搜索框中，输入：iam，点击 ‘**IAM**’
 
@@ -77,10 +77,10 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 53，    添加数据存储，做如下修改，点击 ‘**下一步**’
 
-| 项目         | 配置项                                     | 备注 |
-| ------------ | ------------------------------------------ | ---- |
-| 爬行数据位于 | 我的账户中的指定路径                       |      |
-| 包含路径     | s3://<*yourname*>-e2e-workshop/data_source |      |
+| 项目         | 配置项                                                       | 备注 |
+| ------------ | ------------------------------------------------------------ | ---- |
+| 爬行数据位于 | 我的账户中的指定路径                                         |      |
+| 包含路径     | s3://e2eworkshop-e2edatas3bucket-<*XX*>/<*Year*>/<*Month*>/<*Day*>/ |      |
 
 54，    添加另一个数据存储，保持默认（否），点击 ‘**下一步**’
 

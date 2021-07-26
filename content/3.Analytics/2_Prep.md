@@ -8,7 +8,7 @@ weight: 20
 
 1个存储桶：aws-athena-query-results-<*yourname*>-us-east-1
 
-3个临时文件夹：在实验1部分创建的存储桶 e2eworkshop-e2edatas3bucket-XX下创建：data_brew_out, data_output, athena_output
+3个临时文件夹：在实验1部分创建的存储桶 e2eworkshop-e2edatas3bucket-<*XX*>下创建：data_brew_out, data_output, athena_output
 
 
 
@@ -27,7 +27,7 @@ weight: 20
 
 3， 点击<创建存储桶>
 
-4， 在S3控制台中，搜索并点击：e2eworkshop-e2edatas3bucket-XX开头的存储桶，点击 ’**创建文件夹**’，做如下修改：
+4， 在S3控制台中，搜索并点击：e2eworkshop-e2edatas3bucket-<*XX*>开头的存储桶，点击 ’**创建文件夹**’，做如下修改：
 
 | 项目       | 配置项        | 备注 |
 | ---------- | ------------- | ---- |

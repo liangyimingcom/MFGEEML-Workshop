@@ -6,9 +6,9 @@ weight: 20
 
 在本环节中，需要在 S3 上创建：
 
-2个存储桶：<*yourname*>-e2e-workshop 和 aws-athena-query-results-<*yourname*>-ap-northeast-1
+1个存储桶：aws-athena-query-results-<*yourname*>-us-east-1
 
-3个临时文件夹：在存储桶 <*yourname*>-e2e-workshop 下创建：data_brew_out, data_output, athena_output
+3个临时文件夹：在实验1部分创建的存储桶 e2eworkshop-e2edatas3bucket-XX下创建：data_brew_out, data_output, athena_output
 
 
 
@@ -22,8 +22,8 @@ weight: 20
 
 | 项目         | 配置项                        | 备注 |
 | -------------------- | -------------------------------- | -------------------- |
-| 存储桶名称           | <*yourname*>-e2e-workshop     |  |
-| AWS 区域: （默认值） | 亚太地区(东京) ap-northeast-1 |  |
+| 存储桶名称           | aws-athena-query-results-<*yourname*>-us-east-1 |  |
+| AWS 区域: （默认值） | 美国东部(弗吉尼亚北部) us-east-1 |  |
 
 3， 点击<创建存储桶>
 

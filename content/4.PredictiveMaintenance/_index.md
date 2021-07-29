@@ -1,5 +1,5 @@
 ---
-title: "使用机器学习进行预测性设备维护"
+title: "使用机器学习进行预测性设备维护(60 Min)"
 chapter: false
 weight: 40
 typora-root-url: ../../static

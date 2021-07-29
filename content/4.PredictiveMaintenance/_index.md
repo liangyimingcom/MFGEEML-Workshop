@@ -58,14 +58,17 @@ typora-root-url: ../../static
 
 3. #### 预测性维护方案 - 是AWS在工业领域提供的价值的重要组成部分
 
-1. Iot Core：获得有价值的生产数据
-2. 低成本的Data Lake：获得跨产线和工厂的数据可视化
-3. Optimize Operation with ML & AI：使用人工智能技术提高生产率和质量
-4. Productive Maintenance with ML & AI：使用预测性维护技术提高设备可用率
-5. IoT Greengrass 边缘计算：缩小决策延迟
+   - Iot Core：获得有价值的生产数据
+   - 低成本的Data Lake：获得跨产线和工厂的数据可视化
+   - Optimize Operation with ML & AI：使用人工智能技术提高生产率和质量
+   - Productive Maintenance with ML & AI：使用预测性维护技术提高设备可用率
+   - IoT Greengrass 边缘计算：缩小决策延迟
 
-**AWS使命: 使用机器学习技术开发人工智能应用的能力成为工业企业数字化的重要能力之一**
 
-AWS Mission: Put machine learning in the hands of every developer and data Scientist
 
 ![预测性维护方案是AWS在工业领域提供的价值的重要组成部分](/images/PredictiveMaintenance/预测性维护方案是AWS在工业领域提供的价值的重要组成部分.png)
+
+综上所述：
+
+- **AWS使命: 使用机器学习技术开发人工智能应用的能力成为工业企业数字化的重要能力之一**
+- AWS Mission: Put machine learning in the hands of every developer and data Scientist

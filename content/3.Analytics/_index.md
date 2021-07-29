@@ -1,5 +1,5 @@
 ---
-title: "构建智能湖仓进行数据清洗"
+title: "构建智能湖仓进行数据清洗(60 Min)"
 chapter: false
 weight: 30
 ---

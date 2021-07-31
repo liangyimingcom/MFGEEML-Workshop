@@ -18,9 +18,8 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 **弗吉尼亚** 如下图所示，但您也可以选择其他地区 [SageMaker Studio 可用。](https://docs.aws.amazon.com/sagemaker/latest/dg/studio.html) 正确的区域选择听讲师的。
 {{% /notice %}}
 
+![image-20210731085428195](/images/PredictiveMaintenance/image-20210731085428195.png)
 
-
-[![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image22.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image22.png)
 
 2. 在搜索栏中，输入 **SageMaker** 并单击 **Amazon SageMaker**。
 
@@ -30,9 +29,9 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image40.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image40.png)
 
-4. 点击**快速启动**。
+4. 点击**Quick Start - 快速启动**。
 5. 将**用户名** 定义为 **sagemakeruser** 。
-6. 在执行角色下选择**创建新角色**。
+6. 在执行角色下选择**Create a new role - 创建新角色**。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image24.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image24.png)
 
@@ -54,7 +53,7 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 
 
 
-9. 选择新创建的角色并点击**提交**。
+9. 选择新创建的角色并点击**Submit - 提交**。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image27.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image27.png)
 
@@ -67,6 +66,8 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image29.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image29.png)
 
 12. Amazon SageMaker Studio 准备就绪后，单击**Open Studio**。首次访问 SageMaker Studio 时，页面可能需要 1 或 2 分钟才能加载。
+
+![image-20210731093200091](/images/PredictiveMaintenance/image-20210731093200091.png)
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image30.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image30.png)
 

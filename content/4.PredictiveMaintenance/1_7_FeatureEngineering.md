@@ -21,9 +21,17 @@ weight: 15
 
 [![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image40.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image40.png)
 
-3. 然后您将打开笔记本。您可以在笔记本的右上角验证内核 CPU 和内存状态。
+3. 然后打开笔记本，您可以在笔记本的右上角点击更改《CPU 和内存状态》，更改笔记本实例的配置为**ml.m5.2xlarge**，从而缩小实验数据完成特征工程的所需时间。
 
-[![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image41.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image41.png)
+![image-20210802144426244](/images/PredictiveMaintenance/image-20210802144426244.png)
+
+![image-20210802144345203](/images/PredictiveMaintenance/image-20210802144345203.png)
+
+
+
+3. 等待几分钟后，验证内核、 CPU 内存的状态是否准确（如下图）。
+
+![image-20210802144605110](/images/PredictiveMaintenance/image-20210802144605110.png)
 
 4. 通过在每个单元格中按 **Shift+Enter** 执行前两个单元格。
 {{% notice tip %}}

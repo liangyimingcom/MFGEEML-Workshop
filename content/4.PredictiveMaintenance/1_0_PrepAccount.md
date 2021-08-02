@@ -1,52 +1,52 @@
 ---
 title: "准备实验账号"
 chapter: false
-draft: true
-weight: 11
+draft: false
+weight: 09
 ---
 
 
 
-#  DRAFT - 准备实验账号
+#  准备实验账号
 
 
 
 ## Event Engine AWS Account access
 
-Go to: https://dashboard.eventengine.run/login. You will be redirected to the page below.
+Go to: https://dashboard.eventengine.run/login  您将被重定向到以下页面。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image43.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image43.png)
 
-Enter the event hash you have received from your instructor.
+输入您从讲师得到的活动哈希码。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image44.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image44.png)
 
-Click on **Email One-Time Password (OTP)**.
+单击 **Email One-Time Password (OTP)**。电子邮件一次性密码 (OTP)
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image45.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image45.png)
 
-You are redirected to the following page:
+您将被重定向到以下页面：
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image46.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image46.png)
 
-Enter your email address and click on **Send passcode**.
+输入您的电子邮件地址并点击 ***Send passcod**。 发送密码
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image47.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image47.png)
 
-You are redirected to the following page:
+您将被重定向到以下页面：
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image48.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image48.png)
 
-Check your mailbox, copy-paste the one-time password and click on **Sign in**.
+检查您的邮箱，复制粘贴一次性密码，然后单击**Sign in**。登录
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image49.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image49.png)
 
-You are redirected to the **Team Dashboard**. Click on **AWS Console**.
+您将被重定向到 **Team Dashboard**团队仪表板。单击**AWS Console**AWS 控制台。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image50.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image50.png)
 
-On the next screen, click on **Open AWS Console**.
+在下一个屏幕上，单击 **Open AWS Console**。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image51.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image51.png)
 
-You are then redirected to the **AWS Console**.
+然后您将被重定向到 **AWS Console**。AWS 控制台

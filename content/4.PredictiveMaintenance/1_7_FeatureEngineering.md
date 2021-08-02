@@ -99,7 +99,7 @@ weight: 15
 
 19. 您可以查看每个文件夹的内部，以确保“train.csv”文件和“validation.csv”文件都在那里。
 
-[![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image47.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image47.png)[![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image48.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/ image48.png)
+[![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image47.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image47.png)[![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image48.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image48.png)
 
 **恭喜！！** 您已成功准备数据以训练 XGBoost 模型。
 

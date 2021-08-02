@@ -77,10 +77,10 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 53，    添加数据存储，做如下修改，点击 ‘**下一步**’
 
-| 项目         | 配置项                                                       | 备注 |
-| ------------ | ------------------------------------------------------------ | ---- |
-| 爬行数据位于 | 我的账户中的指定路径                                         |      |
-| 包含路径     | s3://e2eworkshop-e2edatas3bucket-<*XX*>/<*Year*>/<*Month*>/<*Day*>/ |      |
+| 项目         | 配置项                                              | 备注 |
+| ------------ | --------------------------------------------------- | ---- |
+| 爬行数据位于 | 指定的路径                                          |      |
+| 包含路径     | s3://e2eworkshop-e2edatas3bucket-<*XX*>/data_output |      |
 
 54，    添加另一个数据存储，保持默认（否），点击 ‘**下一步**’
 
@@ -98,4 +98,4 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 59，    选择刚刚建立的爬网程序e2e-workshop-parquet-crawler，点击 ‘**运行爬网程序**’ 按钮。（该过程需要几分钟时间）
 
-60，    运行完毕后，点击页面上方提示信息中的数据库名称：e2e-workshop，可以看到新创建的一张表：data_output。检查表相关信息。
+60，    运行完毕后，点击页面上方提示信息中的数据库名称：e2e-workshop，可以看到新创建的1张表：data_output。现在，可以检查这张表的相关信息。

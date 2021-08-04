@@ -69,6 +69,8 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 点击 ‘**查看策略**’，’保存修改’
 
+回到 Glue 服务界面，ETL/作业/e2e-parquet-job/操作/运行作业，再次运行：e2e-parquet-job
+
 50，    当 e2e-parquet-job 运行完毕后，在左侧菜单中选择 ‘爬网程序’，点击蓝色 ‘**添加爬网程序**’ 按钮。
 
 51，    输入爬网程序的名字：e2e-workshop-parquet-crawler，点击 ‘**下一步**’

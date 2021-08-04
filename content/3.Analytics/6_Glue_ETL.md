@@ -17,7 +17,7 @@ weight: 60
 | 名称    | e2e-parquet-job                         |      |
 | IAM角色 | AWSGlueServiceRole-e2e-workshop-crawler |      |
 
-40， 选择一个数据源，data_source 位于 e2e-workshop中，点击 ‘**下一步**’
+40， 选择一个数据源，labata 位于 e2e-workshop中，点击 ‘**下一步**’
 
 41， 选择转换类型，保持默认，点击 ‘**下一步**’
 

@@ -20,12 +20,12 @@ weight: 50
 SELECT COUNT(1) as TotalCount FROM "e2e-workshop"."labdata";
 ~~~
 
-结果窗口中将显示表 ‘data_source’ 中的数据总条数。
+结果窗口中将显示表 ‘labdata’ 中的数据总条数。
 
 37， 将如下命令复制到查询编辑器的窗口中，替换窗口中所有已有的字符，之后点击’**运行查询**’。
 
 ~~~
-SELECT COUNT (1) as TotalCount FROM "e2e-workshop"."labdata" where code='500304';
+SELECT COUNT (1) as TotalCount FROM "e2e-workshop"."labdata" where SYSTEM_CONDSIDETEMPIN>24;
 ~~~
 
-结果窗口中将显示表 ‘data_source’ 中错误代码为500304的记录条数。请记录本次查询的运行时间和扫描数据量。您应该看到类似下面的结果：(运行时间: 1.11 秒, 扫描的数据: 526.89 MB)。
+结果窗口中将显示表 ‘labdata’ 中，SYSTEM_CONDSIDETEMPIN值大于24的记录条数。请记录本次查询的运行时间和扫描数据量。您应该看到类似下面的结果：(运行时间: 1.29 秒, 扫描的数据: 48.54 MB)。

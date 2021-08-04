@@ -81,7 +81,7 @@ datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3
 
 | 项目         | 配置项                                              | 备注 |
 | ------------ | --------------------------------------------------- | ---- |
-| 爬行数据位于 | 指定的路径                                          |      |
+| 爬行数据位于 | 我的账户中的指定路径                                |      |
 | 包含路径     | s3://e2eworkshop-e2edatas3bucket-<*XX*>/data_output |      |
 
 54，    添加另一个数据存储，保持默认（否），点击 ‘**下一步**’

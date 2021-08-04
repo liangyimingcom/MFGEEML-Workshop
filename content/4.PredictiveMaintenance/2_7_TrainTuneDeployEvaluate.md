@@ -56,4 +56,3 @@ Amazon SageMaker 自动模型调整，也称为超参数调整，通过使用您
 
 [![img](https://sagemaker-immersionday.workshop.aws/lab2/media/image26.png)](https://sagemaker-immersionday.workshop.aws/lab2/media/image26.png)
 
-

@@ -1,7 +1,7 @@
 ---
 title: "如何实现预测性维护"
 chapter: false
-weight: 21
+weight: 10
 ---
 
 

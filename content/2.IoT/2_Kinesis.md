@@ -37,7 +37,8 @@ weight: 22
 - 传输流名称输入自定义的传输流名称 如 **IoT2S3**
 - 在变换和转换记录下面的数据转换选项选择**已启用**
     - 在AWS Lambda函数 点击浏览到前期以e2eWorkshop-IoT2S3LambdaXX开始的Lambda函数
-![图 1](/images/IoT/1629875920578.png)  
+ ![图 1](/images/IoT/1630141692725.png)  
+
 - 在下方目标设置中
     - S3 存储桶选择我们选择前期Cloudformation创建的,以e2eworkshop-e2edatas3bucket-XX开头的存储桶
 ![图 2](/images/IoT/1629876106461.png) 
@@ -55,7 +56,7 @@ weight: 22
 
 ![](/images/IoT/rule2.png)
 
-至此,IoT数据到S3的规则创建完成.稍后我们就可以在指定的S3存储桶中看到转换后的数据
+至此,IoT数据到S3的规则创建完成.稍后5分钟左右 我们就可以在指定的S3存储桶中看到转换后的数据
 ![](/images/IoT/s3data.png)
 
 

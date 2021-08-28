@@ -61,6 +61,8 @@ weight: 23
 4. 点击**更新**
 
 
+稍等5分钟左右等待数据打入到Cloudwatch中.
+
 接下来转到Cloudwatch服务,或点击[Cloudwatch](https://console.aws.amazon.com/cloudwatch/home?region=us-east-1#metricsV2:graph=~())
 
 在左侧指标中找到指标,在自定义命名空间中可以看到E2EIoT/Monitor这个命名空间.

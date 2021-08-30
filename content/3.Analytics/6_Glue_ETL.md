@@ -32,9 +32,9 @@ weight: 60
 43， Output Schema Definition，点击 ‘**保存作业并编辑脚本**’
 
 44， 【选做】检查Glue自动生成的代码，在倒数第二行的connection_options中增加参数"partitionKeys": ["code"]，并与前一参数”Path”用逗号与空格隔开。
-
+~~~Plaintext
 datasink4 = glueContext.write_dynamic_frame.from_options(frame = dropnullfields3, connection_type = "s3", connection_options = {\"path\": "s3://e2eworkshop-e2edatas3bucket-<*XX*>/data_output", "partitionKeys": ["code"]}, format = "parquet", transformation_ctx = "datasink4")
-
+~~~
 45， 点击 ‘**保存**’，’**运行作业**’。（该过程需要几分钟时间）观察是否失败了？
 
 失败了：思考是什么原因？（之前创建的IAM角色：AWSGlueServiceRole-e2e-workshop-crawler缺少对S3目录s3://e2eworkshop-e2edatas3bucket-<*XX*>/data_output的访问权限，导致失败。所以现在为其增加相应权限）

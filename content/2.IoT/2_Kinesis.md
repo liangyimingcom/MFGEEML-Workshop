@@ -18,7 +18,7 @@ weight: 22
 | ----- | :-: | ---: |
 | 名称    | e2eIoTRule  | 可自定义  |
 | 描述    | IoT to kinesis and IoT analytic |  可选 |
-| 规则查询语句    | SELECT * FROM 'sensor/out' |[参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)|
+| 规则查询语句    | SELECT * FROM \'sensor/out\' |[参考文档](https://docs.aws.amazon.com/console/iot/iot-sql-reference)|
 
 在下方**设置一个或多个操作**处,点击添加操作
 

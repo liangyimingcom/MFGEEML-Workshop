@@ -83,7 +83,7 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image33.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image33.png)
 
-16. 您可以通过右键单击名称来重命名笔记本。
+16. 您可以通过右键单击名称来重命名笔记本。改名称为`ImmersionDay.ipynb`
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image34.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image34.png)
 

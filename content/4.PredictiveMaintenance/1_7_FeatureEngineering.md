@@ -14,7 +14,7 @@ weight: 15
 
 在此步骤中，您将使用 Amazon SageMaker Studio 笔记本来预处理训练机器学习模型所需的数据。
 
-1. 单击“amazon-sagemaker-immersion-day”文件夹，然后双击最后一个文件：“xgboost_direct_marketing_sagemaker.ipynb”笔记本。
+1. 单击“amazon-sagemaker-immersion-day”文件夹，然后双击最后一个文件：“xgboost_predictive_maintenance_sagemaker.ipynb”笔记本。
 2. 系统将提示您选择一个内核。选择“Python 3 (Data Science)”内核并单击“选择”。
 
 [![img](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image39.png)](https://sagemaker-immersionday.workshop.aws/lab1/option2/media/image39.png)

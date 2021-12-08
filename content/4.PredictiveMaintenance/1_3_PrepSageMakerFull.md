@@ -35,7 +35,7 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image24.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image24.png)
 
-7. 保持默认，点击**创建角色**。
+7. 选择**Any S3 Bucket**，其他保持默认，点击**创建角色**。
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image25.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image25.png)
 
@@ -67,7 +67,7 @@ Amazon SageMaker Studio 是用于机器学习的基于 Web 的集成开发环境
 
 12. Amazon SageMaker Studio 准备就绪后，单击**Open Studio**。首次访问 SageMaker Studio 时，页面可能需要 1 或 2 分钟才能加载。
 
-![image-20210731093200091](/images/PredictiveMaintenance/image-20210731093200091.png)
+![image-20210731093200091](/images/PredictiveMaintenance/image-20210731093200091v2.png)
 
 [![img](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image30.png)](https://sagemaker-immersionday.workshop.aws/prerequisites/media/image30.png)
 
